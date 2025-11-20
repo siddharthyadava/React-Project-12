@@ -1,12 +1,41 @@
-# React + Vite
+# 📘 React Performance Optimization & Component Structure Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React project demonstrates how to structure components efficiently and optimize rendering performance.
+The focus is on separating components, understanding prop-based rendering, and preparing for advanced optimization (like useMemo, React.memo, etc.).
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app is designed to show:
 
-## Expanding the ESLint configuration
+🔹 How to break your UI into reusable components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔹 How to pass props from parent to child components
+
+🔹 How to organize expensive/large components separately
+
+🔹 Clean component structure in a React project
+
+Your current App.js renders an ExpensiveComponent, while the commented section demonstrates how to use a child component with event handlers.
+
+## 📂 Project Structure
+/src
+  ├── App.js
+  ├── App.css
+  ├── components/
+  │     ├── ChildComponent.js
+  │     └── ExpensiveComponent.js
+  └── index.js
+
+  ## 💻 How to Run the Project
+1. Clone the repository
+git clone <your-repo-url>
+cd your-project-folder
+
+2. Install dependencies
+npm install
+
+3. Start the application
+npm start
+
+4. Visit in browser
+http://localhost:3000
